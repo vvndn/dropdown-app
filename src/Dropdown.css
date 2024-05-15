@@ -1,0 +1,65 @@
+.Dropdown-container {
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 75px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: grey;
+}
+
+.Dropdown-title {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.Dropdown-body {
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.Dropdown-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.Dropdown-textbox {
+  text-align: left;
+  background-color: white;
+  padding: 5px;
+  width: 90%;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Dropdown-button {
+  text-align: right;
+  background-color: white;
+  border: none;
+  width: 10%;
+}
+
+.Dropdown-menu {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  text-align: left;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 200px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.Dropdown-list {
+  width: 100%;
+  padding: 0px;
+}

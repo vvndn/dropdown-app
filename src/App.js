@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * App.js
+ *
+ * File is for testing the Dropdown component that we are building for this assignment.
+ *
+ * The Dropdown component is located in Dropdown.js
+ * We will demo both the single select and multi select versions of the dropdown here.
+ *
+ */
+
+import "./App.css";
+import Dropdown from "./Dropdown";
 
 function App() {
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let fruits = [
+    "Apples",
+    "Bananas",
+    "Oranges",
+    "Grapes",
+    "Kiwis",
+    "Watermelons",
+    "Strawberries",
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Dropdown dropdownItems={months} dropdownTitle={"Single Select"} />
+      <Dropdown
+        dropdownItems={fruits}
+        dropdownTitle={"Multi Select"}
+        isMultiSelect={true}
+      />
     </div>
   );
 }

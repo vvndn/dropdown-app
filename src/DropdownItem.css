@@ -1,0 +1,10 @@
+.Dropdown-item {
+  align-items: center;
+  display: flex;
+  flex: row;
+  padding: 10px;
+}
+
+.Dropdown-text {
+  margin-left: 5px;
+}
