@@ -1,3 +1,64 @@
+# Dropdown Menu Component
+by Vivian Doan
+
+## How to run the project
+1. Clone git repo and go to project directory
+2. If you don't have Node.js/npm installed then run:
+### `npm install -g npm`
+3. Install dependencies
+### `npm i`
+4. Run app in dev mode
+### `npm start`
+5. Test app via [http://localhost:3000](http://localhost:3000)
+
+## Files
+### App.js
+Contains the demo of the dropdown menu components (3)
+1. Months (single select, with scroll)
+2. Fruits (multi select, with scroll)
+3. Answers (single select)
+
+### Dropdown.js/Dropdown.css
+Contains the dropdown menu component + CSS styling
+Component API takes:
+- dropdownTitle (string): title/name of dropdown
+- dropdownItems (array of strings): array with options' names
+- isMultiSelect (boolean, optional): boolean to determine whether or not this dropdown has multi selection
+
+### DropdownItem.js/DropdownItem.css
+Contains the dropdown menu options component + CSS styling
+Component API takes:
+- name (string): name of dropdown option
+- isSelected (boolean): determines if current option is selected
+- optionSelect (function): callback function used when user clicks the current option
+- isMulti (boolean, optional): boolean to determine whether or not this dropdown has multi selection
+
+
+## Features/Design decisions
+- User can open and close dropdown menu by clicking the dropdown (the entire component is clickable)
+    - If user clicks out of the dropdown menu, it will also close the dropdown
+- Hovering over different options will highlight it in a different color for better visual feedback
+- Selected options will be displayed in the dropdown box in the order they are selected in
+    - If the list of selected options is too long, the text will be truncated in the dropdown for less visual clutter
+- Options are displayed in the open menu, if there are too many options (over 200px) then a scrollbar is introduced
+- For single select dropdown, user can select "None" to deselect their choice
+- For multi select dropdown, user can select "Select All" to select all options. Clicking on this again will deselect all options.
+
+
+
+
+
+
+
+
+
+
+
+
+
+(below is default Creat React App instructions - kept for reference)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

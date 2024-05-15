@@ -35,15 +35,21 @@ function App() {
     "Watermelons",
     "Strawberries",
   ];
+  let answers = [
+    "Always",
+    "Sometimes",
+    "Never",
+  ];
 
   return (
     <div className="App">
-      <Dropdown dropdownItems={months} dropdownTitle={"Single Select"} />
+      <Dropdown dropdownItems={months} dropdownTitle={"Months (Single Select, w/ scroll)"} />
       <Dropdown
         dropdownItems={fruits}
-        dropdownTitle={"Multi Select"}
+        dropdownTitle={"Fruits (Multi Select, w/ scroll)"}
         isMultiSelect={true}
       />
+      <Dropdown dropdownItems={answers} dropdownTitle={"Answers (Single Select)"} />
     </div>
   );
 }
